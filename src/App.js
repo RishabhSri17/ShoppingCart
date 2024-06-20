@@ -7,7 +7,7 @@ import Cart from './pages/Cart';
 
 function App() {
   return (
-    <div className="App bg-radial-orange from-orangeGradientStart to-orangeGradientEnd h-full w-full">
+    <div className="bg-radial-orange from-orangeGradientStart to-orangeGradientEnd min-h-screen h-full w-full">
       <div>
         <Navbar />
       </div>

@@ -21,7 +21,7 @@ const Cart = () => {
             })}
           </div>
 
-          <div className="flex flex-col md:gap-[60%] space-between justify-center bg-white mb-2 xs:items-center md:pl-7 xs:w-[60%] md:w-[20%] md:text-left">
+          <div className="flex flex-col md:gap-[45%] md:h-screen space-between justify-center bg-white mb-2 xs:items-center md:pl-7 xs:w-[60%] md:w-[20%] md:text-left">
             <div>
               <div className="text-orange-600 font-semibold" >Your Cart</div>
               <div className="text-orange-600 font-bold md:text-3xl mb-3">Summary</div>
@@ -39,10 +39,10 @@ const Cart = () => {
           </div>
         </div>
       ) : (
-        <div>
-          <h1>Cart Empty</h1>
+        <div className="flex flex-col justify-center items-center h-screen gap-y-4">
+          <h1 className="text-white font-bold text-3xl">Cart Empty</h1>
           <Link to={"/"}>
-            <button>Shop Now</button>
+            <button className="text-orange-600 font-bold text-xl bg-white border border-orange-500 py-2 px-7 rounded-lg">Shop Now</button>
           </Link>
         </div>
       )}
